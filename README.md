@@ -102,3 +102,35 @@ This is the most important page on this project. It will contain the map with re
 
 - Github Pages was used to present created page.
 
+## Testing
+
+| First Header  | Second Header |Second Header |
+| ------------- | ------------- |------------- |
+| Content Cell  | Content Cell  |Content Cell  |
+| Content Cell  | Content Cell  |Content Cell  |
+
+## Deployment
+
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+
+1. Log into GitHub.
+2. From the list of repositories on the screen, select madatoo/discover-with-me
+3. From the menu items near the top of the page, select Settings.
+4. Scroll down to the GitHub Pages section.
+5. Under Source click the drop-down menu labelled None and select Master Branch
+6. On selecting Master Branch the page is automatically refreshed, the website is now deployed.
+7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
+
+Run this project locally (clone this project into Gitpod) you will need:
+
+- a Github account. Create a Github account here
+- use the browser with extention for gitpod Then follow these steps:
+
+1. Install the Gitpod Browser Extentions for your browser
+2. After installation, restart the browser
+3. Log into Gitpod with your gitpod account.
+4. Navigate to the Project GitHub repository
+5. Click the green "Gitpod" button in the top right corner of the respository
+6. This will trigger a new gitpod workspace to be created from the code in github where you can work locally.
+
+## Credits
