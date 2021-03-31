@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap|Open+Sans:wght@300');
+
+/*---------------------global*/
+*{
+    border:0;
+    margin: 0;
+    padding:0;
+}
+
+/*--------------home section*/
+.container{
+    padding-top: 1.5rem;
+}
+.navigation-bar{
+    background-color: blueviolet;
+}
+#home-section{
+    background-color: blue;
+}

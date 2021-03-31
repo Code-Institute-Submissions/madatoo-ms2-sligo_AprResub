@@ -102,6 +102,10 @@ This is the most important page on this project. It will contain the map with re
 
 - Github Pages was used to present created page.
 
+- Bootstap
+
+- FontAwesome
+
 ## Testing
 
 | First Header  | Second Header |Second Header |
