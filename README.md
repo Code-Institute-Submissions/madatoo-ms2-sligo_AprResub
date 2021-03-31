@@ -1,45 +1,104 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome madatoo,
+#  Sligo
+live demo is available here (add link to website)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+This site is a work in progress and will be updated with new content. In the future, I want to connect both my projects, MS1 and MS2, into one.
+## Introduction
+This is my second Mile Stone Project for Code Institute.
 
-## Gitpod Reminders
+This time, I decided to create this webpage for my family and friends in Poland. This is an online travel journal from my trips around Ireland. For the purpose of this course, I will limit the website to only a few places in Ireland that I have been to.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Before I started creating this project, I thought about the aims and goals I want to achieve with this. Below, I list some of those answers:
 
-`python3 -m http.server`
+My main goals:
+1. Create a place, where I can improve my writing skills (writing posts on
+   Facebook/Instagram doesn't give me as much satisfaction as I would like).
+2.  Showcase my husband’s photos and/or films, from the trips we've been on together, on this website.
+3.  Build a community of people with similar interests to me in one place.
+4. In the future, I would like to offer the website’s visitors my own
+    services such as short-term flat rentals etc.
+5. And finnaly, the most important personal goal for me is to show my web
+    developer skills.
 
-A blue button should appear to click: *Make Public*,
+##  User Experience
+User experience is probably the most significant thing when building a webpage. From my own experience in sales and marketing, it is key to focus your attention in the right areas (like user experience, in this case). To do this properly, you need to spend a while to figure out who is your target audience. Then you need to get to know them and their needs, for instance what they would look for on your website and why. Once you have that information, you need to think about different ways you can deliver them the best solutions.
 
-Another blue button should appear to click: *Open Browser*.
+Fortunately for me, I know the first viewers of this page.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ 1. They are middle aged or older.
+ 2. Usually, they have teenage or adult children.
+ 3. They mostly use smartphones and laptops.
+ 4. They like to watch photos (carousel gallery would probably work best for them).
+ 5. Majority of them also likes movies.
 
-A blue button should appear to click: *Make Public*,
+For school purposes this webpage is written in English, but my audience will be in Poland. I will have to add a second language (Polish) to the page, to make their experience on the website better.
 
-Another blue button should appear to click: *Open Browser*.
+### First time Visitor's needs:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Website's first time visitors could want:
 
-## Updates Since The Instructional Video
+1. To look for nice places to visit on their trip to Ireland.
+2. To look for maps, instructions or tips on how to travel around.
+3. To easily navigate throughout the website.
+4. To find social media links and/or a way to contact me.
+5. To look at some pictures and/or films.
+6. To read about more recommended places.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Returning visitors are very often interested in:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+ 1. Up to date information about travel.
+ 2. New articles on the website.
+ 3. Answers to their own questions, which can be available in FAQ (in future).
+ 4. Collaborating with me.
+ 5. Planning their own trips with me (available in the future).
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Design
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Features
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+#### Global
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+This website will be very simple and intuitive, to give my audience a great user experience.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+That can be achieved by having:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+ 1. A home button (logo placed on the top left corner).
+ 2. Responsive menu on the left side below logo,
+ 3. Social media icons, on the top right-hand side, to follow me on Instagram, Facebook and You Toube. Those links will open in separate pages.
+ 4. A footer stuck at the bottom of each page with copyright information.
 
---------
+I will begin by creating the mobile first design. Currently, most people look at websites on their smartphones before they check them online on bigger devices, such as tablets or laptops.
 
-Happy coding!
+Those features will apply to all of the pages on my website.
+
+##### Home page
+
+The home page is going to include all of the features listed above. It will also have a jumbotron which will hover, and move a little to the front, to give my audience a fun experience when they will visit this page.
+
+##### Contact page
+
+The contact form will be placed in a way that is demonstrated in the wireframes. I would like to add some funny effects (for example: changing colours when a button is touched or a form is sent to me). On the left-hand side I would like to add a video window, where a short film will be available, showcasing some of the places mentioned on the website. I would like to link this form with jsemail.com, to receive messages from visitors.
+
+##### Trips page
+
+This is the most important page on this project. It will contain the map with recommended places such us: beaches, parks, towns, restaurants, etc. The map will contain flag markers and pictures with descriptions taken from Google Maps API. I would also like to create a carousel gallery with those places. Upon clicking a photo on the carousel, it will open a new window that will have a miniature picture of the clicked place and some brief information about it.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JS
+
+### Frameworks, Libraries & Programs Used
+
+- Balsamic was used to create wireframes for each site on this project.
+
+- Github was used to store the project.
+
+- Gitpod is an Integrated Development Enviroment (IDE) which was used to create project.
+
+- Git was used to version control.
+
+- Github Pages was used to present created page.
+
