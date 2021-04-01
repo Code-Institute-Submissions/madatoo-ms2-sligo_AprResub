@@ -41,7 +41,45 @@
         <div id="map"></div>
     </section>
     <section>with travel options</section>
-    <section>with contact form</section>
+    
+    <!--contact form-->
+    <section class="last-section" id="contact">
+        <div class="container-fluid">
+            <div class="container">
+                <div class=" text-center place-text">
+                    <h3>Do you have any questions?</h3>
+                </div>
+                <div class="text-center place-text">
+                    <p>Please do not hestiate to contact with me directly</p>
+                </div>
+            </div>
+               
+            <div class="container text-center msg">
+                <form>
+                    <div class="form-group col sm-10 md-8">
+                        <input type="email" class="form-control" id="email-address" placeholder="Email" required>
+                    </div>
+                    <div class="form-group col sm-10">
+                        <!--<label class="choice" for="select-trip ">Select trip.</label>-->
+                        <select class="form-control" id="select-trip">
+                            <option>Select trip.</option>
+                            <option>trip for two</option>
+                            <option>family trip</option>
+                            <option>other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col md-12">
+                        <textarea class="form-control col md-12" rows="2" id="yourMessage" placeholder="Your message" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn home-section-button" data-toggle="modal" data-target="#messageModal">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+                 
+       
     <footer></footer> 
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgYKiqV3h7VzgZNUk2fAXzIBfcCNWGovA&libraries=&v=weekly" async></script>
