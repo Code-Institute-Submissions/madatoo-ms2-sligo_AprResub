@@ -7,13 +7,43 @@
     padding:0;
 }
 
+body{
+    font-family:"Open Sans", sans-serif;
+}
+
 /*--------------home section*/
 .container{
     padding-top: 1.5rem;
 }
-.navigation-bar{
-    background-color: blueviolet;
+
+.hero-image{
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-sizing: content-box;
+	display: flex;
+	height: 15rem;
+	margin: 0;
+	position: relative;
+	width: 100%;
 }
 #home-section{
     background-color: blue;
+    
 }
+
+
+/*-----------------map section*/
+
+#map {
+	width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+	margin-bottom: 1 rem;
+    height: 18rem;
+    background-color: aquamarine;
+}
+/*-----------------trips section*/
+
+/*-----------------contact section*/
+
