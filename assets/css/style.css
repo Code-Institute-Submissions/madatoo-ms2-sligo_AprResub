@@ -38,11 +38,12 @@ body{
 /*-----------------map section*/
 
 #map {
-	width: 80%;
+    width: 80%;
+    
     margin: auto;
     margin-top: 1rem;
-	margin-bottom: 1 rem;
-    height: 18rem;
+    margin-bottom: 1 rem;
+    height: 400px;
     background-color: aquamarine;
 }
 /*-----------------trips section*/
