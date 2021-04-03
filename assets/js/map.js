@@ -28,7 +28,7 @@ const sligo =  {
             
             },
             {
-                name:palace,
+                name:"palace",
                 icon: iconBase + "palace-2.png"
             
             },
@@ -143,5 +143,13 @@ const locations = [
     },
 ];
 
+    // The marker, positioned at Sligo
+    const marker = new google.maps.Marker({
+        position: sligo,
+        map: map,
+    });
+
+
+    
   
 }
