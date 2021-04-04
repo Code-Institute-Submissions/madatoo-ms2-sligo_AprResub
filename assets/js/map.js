@@ -55,7 +55,7 @@ function initMap() {
     ];
 
     // create an array with places in and nearby Sligo
-    const locationsArray = [
+    const locations = [
 
         // Beaches
         //Rosses Point
@@ -142,32 +142,66 @@ function initMap() {
         },
     ];
 
-    
-
-    // This event listener calls addMarker() when the map is clicked.
-    google.maps.event.addListener(marker, "click", function() {
-        addMarker(map, marker);
+    // This event listener will call addMarker() when the map is clicked.
+    map.addListener("click", (event) => {
+    addMarker(event.latLng);
     });
 
+    // Adds a marker at the center of the map.
+    addMarker(locations);
 
-
-    for (var i=0; i < locationsArray.length; i++) {
-        addMarker(locationsArray[i]);
-    }
-
-    // Adds a marker to the map.
-    function addMarker(locationsArray) {
-    // Add the marker at the clicked location
-        var marker = new google.maps.Marker({
-            position: locationsArray.coordinates,
-            icon: icons[iconArray],icon,
+    // Adds a marker to the map and push to the array.
+    function addMarker(location) {
+        const marker = new google.maps.Marker({
+            position: location,
             map: map,
         });
+        
+        markers.push(marker);
+    }
+
+   // Deletes all markers in the array by removing references to them.
+   function deleteMarkers() {
+       clearMarkers();
+       markers = [];
+    }
 
 
 
-    
+
+
+
+}
+
+
+
+
+
+
+    // The marker, positioned at Sligo
+    /*const marker = new google.maps.Marker({
+        position: sligo,
+        map: map,
+        
+    });
+
+    //loop trought markers
+    for (let i=0; i<locations.length; i++){
+        addMarker(locations[i])
+    }
+
+    // Add markers
+    /*function addMarker(feature) {
+        var marker = new google.maps.Marker({
+            position: feature.position,
+            icon: icons[feature.type].icon,
+            map: map
+        });*/
+
+
+
+
+ 
     
 
         
-}}
