@@ -76,6 +76,18 @@ footer {
     margin-bottom: 100px;
 }
 /*--------------------footer*/
+
+footer p {
+    margin:0;
+    overflow: visible;
+}
+
+footer p,
+footer ul li a{
+    font-size:1.25rem;
+}
+
+
 footer ul {
     display: flex;
     list-style-type: none;
@@ -87,4 +99,29 @@ footer ul li {
     margin:2rem;
 }
 
+footer ul li a {
+    color: green;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer ul li a:hover {
+    color: grey;
+}
+
+
+@media (max-width: 666px){
+    footer p{
+        position: fixed;
+        overflow: hidden;
+    }
+
+
+    footer ul{
+        text-align: center;
+    }
+    
+    
+
+}
 
