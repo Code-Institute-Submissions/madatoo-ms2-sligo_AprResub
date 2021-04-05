@@ -147,7 +147,11 @@ nav ul li a:hover {
     box-sizing: initial;
 }
 /*-----------------trips section*/
-
+.discover-places{
+    display:flex;
+   }
+    
+    
 /*-----------------contact section*/
 .last-section {
     margin-bottom: 100px;
