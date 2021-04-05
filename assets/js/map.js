@@ -156,6 +156,19 @@ function initMap() {
             position: location,
             map: map,
         });
+
+        //check for custom Icon
+
+        if (locations.type == iconArray.name) {
+            //set image icon
+            icon: iconArray.icon
+            
+            }
+            
+            marker.setIcon (icon)
+        }
+
+        
         
         markers.push(marker);
     }
@@ -171,7 +184,7 @@ function initMap() {
 
 
 
-}
+
 
 
 
