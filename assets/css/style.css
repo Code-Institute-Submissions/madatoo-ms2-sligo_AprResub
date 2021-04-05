@@ -5,12 +5,20 @@
     border:0;
     margin: 0;
     padding:0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
-html {
+/*html {
     position: relative; 
      
+}*/
+/*source: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body{
@@ -103,29 +111,33 @@ nav ul li a:hover {
 }
 
 /*--------------home section*/
-.white-text{
-    margin: 0 auto;
-    margin-top: 2ram;
-    color:#fff;
-}
-
 .container{
     padding-top: 1.5rem;
 }
 
 .hero-image{
     background-image: url("../img/bridge.png");
+    height: 20rem;
     background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	box-sizing: content-box;
-	/*display: flex;*/
+	/*box-sizing: content-box;
+	/*display: flex;/
 	height: 15rem;
 	margin: 0, auto;
 	position: relative;
-    width: 100%;
-    
+    width: 100%;*/   
 }
+
+.white-text{
+    /*margin: 0 auto;
+    margin-top: 4ram;*/
+    color:#fff;
+    text-align: center;
+    top: 70%;
+	position: relative;
+}
+
 
 #home-section{
     background-color: blue;
@@ -147,9 +159,11 @@ nav ul li a:hover {
     box-sizing: initial;
 }
 /*-----------------trips section*/
-.discover-places{
+/*.discover-places{
     display:flex;
-   }
+    flex-direction: column;
+    position: relative;
+   }*/
     
     
 /*-----------------contact section*/
