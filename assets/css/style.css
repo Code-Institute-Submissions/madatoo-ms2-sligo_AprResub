@@ -5,12 +5,12 @@
     border:0;
     margin: 0;
     padding:0;
+   /* box-sizing: border-box;*/
 }
 
 html {
     position: relative;
-    
- 
+     
 }
 
 body{
@@ -21,8 +21,51 @@ body{
 
 }
 
+/*------------------navigation bar*/
+
+nav{
+    color: green;
+    background-color: indigo;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    overflow: hidden;
+}
+
+nav ul,
+footer ul {
+    display: flex;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+
+}
+
+nav ul li
+{
+    margin:0 10px;
+}
+
+nav ul li a {
+    color: green;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: grey;
+}
+
+
+
+
+
 footer {
-    height: 100px;
+    
+    height :100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -34,7 +77,13 @@ footer {
     background-color: indigo;
 }
 
+
+
+
+
 /*--------------home section*/
+
+
 
 
 .container{
@@ -88,12 +137,12 @@ footer ul li a{
 }
 
 
-footer ul {
+/*footer ul {
     display: flex;
     list-style-type: none;
     margin:0;
     padding:0;
-}
+}*/
 
 footer ul li {
     margin:2rem;
@@ -111,15 +160,20 @@ footer ul li a:hover {
 
 
 @media (max-width: 666px){
+    footer{
+        align-items: center;
+        margin:auto;
+
+    }
     footer p{
         position: fixed;
         overflow: hidden;
     }
 
 
-    footer ul{
-        text-align: center;
-    }
+   /* footer ul{
+        align-items: center;
+    }*/
     
     
 
