@@ -9,8 +9,7 @@
 }
 
 html {
-    position: relative;
-    
+    position: relative; 
      
 }
 
@@ -45,7 +44,8 @@ h1 {
 	font-size: 46px;
 	letter-spacing: 1px;
 	margin-bottom: 0.5em;
-	margin-top: 0.5em;
+    margin-top: 0.5em;
+
 }
 
 h2 {
@@ -101,27 +101,7 @@ nav ul li a:hover {
     color:darkred;
 }
 
-footer {
-    
-    height :100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top:auto;
-    padding:1.75rem;
-
-    color: darkolivegreen;
-    background-color: #fff;
-}
-
-
-
-
-
 /*--------------home section*/
-
-
 
 
 .container{
@@ -163,6 +143,19 @@ footer {
     margin-bottom: 100px;
 }
 /*--------------------footer*/
+footer {
+    
+    height :100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:auto;
+    padding:1.75rem;
+
+    color: darkolivegreen;
+    background-color: #fff;
+}
 
 footer p {
     margin:0;
