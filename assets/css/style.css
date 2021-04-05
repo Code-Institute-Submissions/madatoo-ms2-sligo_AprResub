@@ -136,12 +136,12 @@ nav ul li a:hover {
 /*-----------------map section*/
 
 #map {
-    width: 80%;
+    width: 86%;
     
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1 rem;
-    height: 500px;
+    height: 400px;
     background-color: aquamarine;
 
     box-sizing: initial;
