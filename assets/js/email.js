@@ -7,9 +7,9 @@
                 
         function sendMail(send_message){
             
-            emailjs.send("service_icxm4p6", "sligo_trips", {
+            emailjs.send("service_icxm4p6", "template_sx7dhvo", {
                 "from_name":send_message.name.value,
-                "emailaddress": send_message.emailaddress.value,
+                "from_emailaddress": send_message.emailaddress.value,
                 "trip_request": send_message.trip_request.value
             })
                 
