@@ -66,7 +66,8 @@ function initMap() {
             },
             type: "shore",
             placeName: "Rosses Point",
-            information: "This is one of my favourite places on the coast. I love this old seafaring village that has a seaside resort with a 18-hole championship golf course. If you like sailing you can hire a fully equipped boat and enjoy your day at the sea."
+            information: "My favourite places on the coast.",
+            link:"https://www.google.com/maps/place/Rosses+Upper,+Rosses+Point,+Co.+Sligo/@54.3047663,-8.5727754,15z/data=!3m1!4b1!4m5!3m4!1s0x485edd2ced6b1cd3:0xa00c7a99731ac00!8m2!3d54.3047546!4d-8.5640206" 
         },
 
         //Strandhill
@@ -77,7 +78,8 @@ function initMap() {
             },
             type: "surfing",
             placeName: "Strandhill",
-            information: "This is location has been named as one of the best places to surf in Europe. It is worth noting that swimming is forbidden at Strandhill beach due to very strong sea currents."
+            information: "The best places to surf in Europe.",
+            link:"https://www.google.com/maps/place/Strandhill+Beach/@54.2699579,-8.6191337,15z/data=!3m1!4b1!4m5!3m4!1s0x485ec364af525edf:0x91fe6352adadb717!8m2!3d54.2699462!4d-8.6103789"
         },
 
         // Town attractions
@@ -89,7 +91,8 @@ function initMap() {
                 lng: -8.4694,
             },
             type: "smallcity",
-            placeName: "Sligo"
+            placeName: "Sligo",
+            link:"https://www.google.com/maps/place/Sligo/@54.26842,-8.5157496,13z/data=!3m1!4b1!4m5!3m4!1s0x485ee9b5677caee9:0xa00c7a997317380!8m2!3d54.2766103!4d-8.4760888"
 
 
         },
@@ -103,7 +106,8 @@ function initMap() {
             },
             type: "ruins",
             placeName: "Sligo Abbey",
-            information: "This place surprised me very much. It was founded in the mid 13th cenury by Maurice Fitzgerald and is, still, one of the most distinguishable places in Sligo."
+            information: "This one of the most distinguishable places in Sligo.",
+            link:"https://www.google.com/maps/place/Sligo+Abbey/@54.2708417,-8.4722735,17z/data=!3m1!4b1!4m5!3m4!1s0x485ee835752f1d8d:0x381cb143ec6d3c2a!8m2!3d54.2708386!4d-8.4700848"
         },
 
         //Yeats Building
@@ -114,7 +118,8 @@ function initMap() {
             },
             type: "museum",
             placeName: "Yeats Building",
-            information: "There is a permanent exhibition on the life and works of W.B.Yeats and Yeats Art Gallery presents changing exhibitions of art, sculpture, crafts etc."
+            information: "There is a permanent exhibition on the life and works of W.B.Yeats.",
+            link:"https://www.google.com/maps/place/Yeats+Building/@54.2721335,-8.4772024,17z/data=!3m1!4b1!4m5!3m4!1s0x485ee83415b912cb:0xd527b4c95f171e61!8m2!3d54.272114!4d-8.4750903"
         },
 
         // Nearby attractions
@@ -127,7 +132,8 @@ function initMap() {
             },
             type: "palace",
             placeName: "Lisadell House and Gardens",
-            information: "This is an amazing historical place sorrounded by a beautiful large garden. Located in proximity to the majestic table mountain, Benbulben."
+            information: "This is an amazing historical place sorrounded by a beautiful large garden.",
+            link:"https://www.google.com/maps/place/Lissadell+House,+Lissadill,+Ballinfull,+Co.+Sligo/@54.3467179,-8.583131,17z/data=!3m1!4b1!4m5!3m4!1s0x485edd00393178cf:0x8349d17e54a18f8d!8m2!3d54.3467148!4d-8.5809423"
         },
 
         //Mullaghmore
@@ -138,7 +144,8 @@ function initMap() {
             },
             type: "restaurant",
             placeName: "Mullaghmore",
-            information: "Small fishing village with a superb, large (3km) sandy beach. Mullaghmore is also a base for licensed angling/passanger boats for charter."
+            information: "Small fishing village with large (3km) sandy beach and great seafood restaurant.",
+            link: "https://www.google.com/maps/place/Rosses+Upper,+Rosses+Point,+Co.+Sligo/@54.3047663,-8.5727754,15z/data=!3m1!4b1!4m5!3m4!1s0x485edd2ced6b1cd3:0xa00c7a99731ac00!8m2!3d54.3047546!4d-8.5640206"
         },
     ];
 
@@ -154,6 +161,7 @@ function initMap() {
     function addMarker(location) {
         const marker = new google.maps.Marker({
             position: location,
+            
             map: map,
         });
 
@@ -178,43 +186,5 @@ function initMap() {
        clearMarkers();
        markers = [];
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // The marker, positioned at Sligo
-    /*const marker = new google.maps.Marker({
-        position: sligo,
-        map: map,
-        
-    });
-
-    //loop trought markers
-    for (let i=0; i<locations.length; i++){
-        addMarker(locations[i])
-    }
-
-    // Add markers
-    /*function addMarker(feature) {
-        var marker = new google.maps.Marker({
-            position: feature.position,
-            icon: icons[feature.type].icon,
-            map: map
-        });*/
-
-
-
-
- 
     
 
-        

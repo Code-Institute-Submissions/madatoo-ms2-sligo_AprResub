@@ -76,7 +76,7 @@ h4 {
 nav{
     color: darkolivegreen;
     background-color:#fff;
-    box-shadow: 0 3px 5px rgba (0,0,0, 0.1);
+    /*box-shadow: 0 3px 5px rgba (0,0,0, 0.1);*/
 
     display: flex;
     justify-content: space-between;
@@ -84,6 +84,9 @@ nav{
 
     padding: 1rem;
     overflow: hidden;
+
+    /*position: sticky; 
+    top: 0;*/
 }
 
 nav ul,
@@ -126,7 +129,8 @@ nav ul li a:hover {
 	height: 15rem;
 	margin: 0, auto;
 	position: relative;
-    width: 100%;*/   
+    width: 100%;*/  
+    
 }
 
 .white-text{
@@ -156,13 +160,24 @@ nav ul li a:hover {
     height: 400px;
     background-color: aquamarine;
 
-    box-sizing: initial;
 }
+
+/* for map1 file#map{
+    width: 86%;
+    height: 100%;
+    background-color: aquamarine;
+}*/
+
+    
+
+    /*box-sizing: initial;*/
+
 /*-----------------trips section*/
 /*.discover-places{
     display:flex;
     flex-direction: column;
     position: relative;
+    float:left;
    }*/
     
     
@@ -229,10 +244,9 @@ footer ul li a:hover {
         overflow: hidden;
     }
 
-
-   /* footer ul{
-        align-items: center;
-    }*/
+/* footer ul{
+    align-items: center;
+}*/
     
     
 
