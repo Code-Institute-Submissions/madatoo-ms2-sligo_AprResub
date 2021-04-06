@@ -155,20 +155,25 @@ function initMap() {
     addMarker(event.latLng);
     });
 
-    // Adds a marker at the center of the map.
-    addMarker(locations);
+    // When the user clicks the marker, an info window opens.
 
+    for (location in locations) {
+
+    // Adds a marker at the map.
+    addMarker(locations[i].coordinates);
+            
+    }
+    
     // Adds a marker to the map and push to the array.
     function addMarker(location) {
         const marker = new google.maps.Marker({
             position: location,
-
             map: map,
         });
 
         //check for custom Icon
 
-        if (locations.type == iconArray.name) {
+        if (locations.type = iconArray.name) {
             //set image icon
             icon: iconArray.icon
             
@@ -176,8 +181,7 @@ function initMap() {
             
             marker.setIcon (icon)
         }
-
-        
+       
         
         markers.push(marker);
     }
