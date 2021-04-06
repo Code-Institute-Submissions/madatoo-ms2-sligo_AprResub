@@ -5,13 +5,8 @@
     border:0;
     margin: 0;
     padding:0;
-    /*box-sizing: border-box;*/
+   
 }
-
-/*html {
-    position: relative; 
-     
-}*/
 /*source: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 
 html {
@@ -130,24 +125,15 @@ nav ul li a:hover {
     background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	/*box-sizing: content-box;
-	/*display: flex;/
-	height: 15rem;
-	margin: 0, auto;
-	position: relative;
-    width: 100%;*/  
-    
+	   
 }
 
 .white-text{
-    /*margin: 0 auto;
-    margin-top: 4ram;*/
     color:#fff;
     text-align: center;
     top: 70%;
 	position: relative;
 }
-
 
 #home-section{
     background-color: blue;
@@ -165,19 +151,10 @@ nav ul li a:hover {
     margin-bottom: 1 rem;
     height: 400px;
     background-color: aquamarine;
-
-}
-
-/* for map1 file#map{
-    width: 86%;
-    height: 100%;
-    background-color: aquamarine;
-}*/
-
-    
-
     /*box-sizing: initial;*/
 
+}
+ 
 /*-----------------trips section*/
 /*.discover-places{
     display:flex;
@@ -216,14 +193,6 @@ footer ul li a{
     font-size:1.25rem;
 }
 
-
-/*footer ul {
-    display: flex;
-    list-style-type: none;
-    margin:0;
-    padding:0;
-}*/
-
 footer ul li {
     margin:2rem;
 }
@@ -239,7 +208,8 @@ footer ul li a:hover {
 }
 
 
-@media (max-width: 666px){
+@media (max-width: 768px){
+
     footer{
         align-items: center;
         margin:auto;
@@ -250,9 +220,10 @@ footer ul li a:hover {
         overflow: hidden;
     }
 
-/* footer ul{
+    /*footer ul{
     align-items: center;
-}*/
+    
+    }*/
     
     
 

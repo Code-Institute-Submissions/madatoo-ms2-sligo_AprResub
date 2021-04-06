@@ -1,16 +1,16 @@
 //this code is from https://www.emailjs.com/docs/tutorial/creating-contact-form/
 
-/*   window.onload = function() {
+/*window.onload = function() {*/
         document.getElementById('send_message').addEventListener('submit', function(event) {
-                event.preventDefault();*/
+                event.preventDefault();
 
                 
         function sendMail(send_message){
 
             emailjs.send("service_icxm4p6","template_sx7dhvo",{
                 from_name: send_message.name.value,
-                trip_request: send_message.emailaddress.value,
-                emailaddress: send_message.trip_request.value,
+                trip_request: send_message.trip_request.value,
+                emailaddress: send_message.emailaddress.value,
                 })
 
                 .then(
@@ -26,4 +26,4 @@
 
             return false;
             }
-        /*})}*/
+        })
