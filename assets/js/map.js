@@ -92,6 +92,7 @@ function initMap() {
             },
             type: "smallcity",
             placeName: "Sligo",
+            information:"Sligo is also a tourist destination, being situated on the Wild Atlantic Way",
             link:"https://www.google.com/maps/place/Sligo/@54.26842,-8.5157496,13z/data=!3m1!4b1!4m5!3m4!1s0x485ee9b5677caee9:0xa00c7a997317380!8m2!3d54.2766103!4d-8.4760888"
 
 
@@ -161,7 +162,7 @@ function initMap() {
     function addMarker(location) {
         const marker = new google.maps.Marker({
             position: location,
-            
+
             map: map,
         });
 
