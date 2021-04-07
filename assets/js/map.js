@@ -154,7 +154,7 @@ function initMap() {
     position: sligo,
     map,
     title: "Hello World!",
-    //animation:google.maps.Animation.BOUNCE,
+    
   });
     
      
