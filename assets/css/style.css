@@ -222,9 +222,10 @@ footer ul li a {
 footer ul li a:hover {
     color: darkred;
 }
-
+/*-----------------media queries*/
 
 @media (max-width: 768px){
+
 
     footer{
         align-items: center;
@@ -236,11 +237,7 @@ footer ul li a:hover {
         overflow: hidden;
     }
 
-    /*footer ul{
-    align-items: center;
-    
-    }*/
-    
+        
     
 
 }

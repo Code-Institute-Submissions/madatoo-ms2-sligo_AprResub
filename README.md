@@ -1,7 +1,7 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 #  Sligo
-live demo is available here (add link to website)
+live demo is available here (https://madatoo.github.io/ms2-sligo/)
 
 This site is a work in progress and will be updated with new content. In the future, I want to connect both my projects, MS1 and MS2, into one.
 ## Introduction

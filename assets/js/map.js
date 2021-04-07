@@ -167,14 +167,14 @@ function initMap() {
     // Adds a marker to the map and push to the array and open info window when //the user clicks the marker, an info window opens.
     function addMarker(location) {
         
-        const infowindow = new google.maps.InfoWindow({
-            content = `<h4>${locations[i].placeName}</h4>
-            <p>${ locations[i].information} ${locations[i].link }"</p>"`
-        });
+        //const infowindow = new google.maps.InfoWindow({
+        //    content : `<h4>${locations[i].placeName}</h4>
+        //    <p>${ locations[i].information} ${locations[i].link }"</p>"`
+        //});
 
         const marker = new google.maps.Marker({
             position: location,
-            animation = google.maps.Animation.DROP,
+            animation: google.maps.Animation.DROP,
             map: map,
         });
 
