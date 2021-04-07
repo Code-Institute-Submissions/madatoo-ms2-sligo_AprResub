@@ -108,17 +108,30 @@ This is the most important page on this project. It will contain the map with re
 
 ## Testing
 
-| First Header  | Second Header |Second Header |
-| ------------- | ------------- |------------- |
-| Content Cell  | Content Cell  |Content Cell  |
-| Content Cell  | Content Cell  |Content Cell  |
+1. Functionality
+    - eye-friendly - I wanted create website, which will be frendly for our eays ( light corors with good contrast can help reduce effort needet to follow by texts). In my poinion test is passed.
+    - navigation on site is clearly and visible  - yes
+    - content on the web is stricly connected to the main topic - yes
+    - links to social media in footer provide to intended websites - yes
+    - links in nav bar provides to intendent sections on the webpage - yes
+    - buttons below paragraphs provides to additional sources (other websites about the main topic) - yes
+    - map shows clicked markers and when one of them is clicked again should be dispayed info about that place and link to google map with this place. For now - it not working properly. The css code is ok, but map is not showing . Test failure.
+    - 
+2. Browser Compatibility
+    Google Chrome - working 
+    Firefox -
+    Edge - 
+    
 
+3. Responsiveness
+4. User Stories
+|
 ## Deployment
 
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
 1. Log into GitHub.
-2. From the list of repositories on the screen, select madatoo/discover-with-me
+2. From the list of repositories on the screen, select madatoo/ms2-sligo
 3. From the menu items near the top of the page, select Settings.
 4. Scroll down to the GitHub Pages section.
 5. Under Source click the drop-down menu labelled None and select Master Branch
