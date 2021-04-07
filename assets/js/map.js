@@ -10,8 +10,8 @@ function initMap() {
         center: sligo,
         zoom: 11,
         mapTypeId: "satellite",
-        heading: 90,
-        tilt: 45,
+        //heading: 90,
+        //tilt: 45,
     });
 
     const iconBase = "assets/img/";
@@ -157,51 +157,51 @@ function initMap() {
 
     // When the user clicks the marker, an info window opens.
 
-    for (location in locations) {
+//    for (location in locations) {
 
     // Adds a marker  to the map.
-    addMarker(locations[i].coordinates);
+//    addMarker(locations[i].coordinates);
             
-    }
+//   }
     
     // Adds a marker to the map and push to the array and open info window when //the user clicks the marker, an info window opens.
-    function addMarker(location) {
+//    function addMarker(location) {
         
         //const infowindow = new google.maps.InfoWindow({
         //    content : `<h4>${locations[i].placeName}</h4>
         //    <p>${ locations[i].information} ${locations[i].link }"</p>"`
         //});
 
-        const marker = new google.maps.Marker({
-            position: location,
-            animation: google.maps.Animation.DROP,
-            map: map,
-        });
+//        const marker = new google.maps.Marker({
+//            position: location,
+//            animation: google.maps.Animation.DROP,
+//            map: map,
+//        });
 
-        marker.addListener("click", () => {
-            infowindow.open(map, marker);
-        });
+//        marker.addListener("click", () => {
+//           infowindow.open(map, marker);
+//        });
 
 
         //check for custom Icon
 
-        if (locations.type == iconArray.name) {
+//       if (locations.type == iconArray.name) {
             //set image icon
-            icon = iconArray.icon
+//            icon = iconArray.icon
             
-            }
+//            }
             
-            marker.setIcon (icon)
-        }
+//           marker.setIcon (icon)
+//       }
        
         
-        markers.push(marker);
-    }
+//        markers.push(marker);
+//    }
 
    // Deletes all markers in the array by removing references to them.
-   function deleteMarkers() {
-       clearMarkers();
-       markers = [];
-    }
+//  function deleteMarkers() {
+//       clearMarkers();
+//      markers = [];
+//   }
     
 
