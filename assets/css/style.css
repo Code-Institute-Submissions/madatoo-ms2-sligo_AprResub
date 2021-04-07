@@ -66,10 +66,18 @@ h4 {
 	font-size: 18px;
 }
 
+/*.button-style{
+    background-color:darkolivegreen;
+}
+
+.button-style:hover:
+    background-color:darkred;
+}*/
+
 /*------------------navigation bar*/
 
 nav{
-    color: darkolivegreen;
+    color:#28a745;
     background-color:#fff;
     /*box-shadow: 0 3px 5px rgba (0,0,0, 0.1);*/
 
@@ -105,7 +113,7 @@ nav ul li
 }
 
 nav ul li a {
-    color: darkolivegreen;
+    color: #28a745;
     text-decoration: none;
     font-weight: 600;
 }
@@ -113,6 +121,8 @@ nav ul li a {
 nav ul li a:hover {
     color:darkred;
 }
+
+
 
 /*--------------home section*/
 .container{
@@ -134,6 +144,12 @@ nav ul li a:hover {
     top: 70%;
 	position: relative;
 }
+
+.white-text h2{
+    top: 70%;
+    overflow:hidden;
+}
+
 
 #home-section{
     background-color: blue;
@@ -179,7 +195,7 @@ footer {
     margin-top:auto;
     padding:1.75rem;
 
-    color: darkolivegreen;
+    color: #28a745;
     background-color: #fff;
 }
 
@@ -198,7 +214,7 @@ footer ul li {
 }
 
 footer ul li a {
-    color: darkolivegreen;
+    color: #28a745;
     text-decoration: none;
     font-weight: 500;
 }
