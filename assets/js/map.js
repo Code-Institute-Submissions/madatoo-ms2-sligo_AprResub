@@ -150,6 +150,15 @@ function initMap() {
         },
     ];
 
+    new google.maps.Marker({
+    position: sligo,
+    map,
+    title: "Hello World!",
+    //animation:google.maps.Animation.BOUNCE,
+  });
+    
+     
 
+    
 }
 
