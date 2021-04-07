@@ -10,9 +10,12 @@ function initMap() {
         center: sligo,
         zoom: 11,
         mapTypeId: "satellite",
-        heading: 90,
-        tilt: 45,
+        //heading: 90,
+        //tilt: 45,
     });
+
+    // Create an array of alphabetical characters used to label the markers.
+    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     const iconBase = "assets/img/";
     // array with icons   
@@ -149,52 +152,20 @@ function initMap() {
             link: "https://www.google.com/maps/place/Rosses+Upper,+Rosses+Point,+Co.+Sligo/@54.3047663,-8.5727754,15z/data=!3m1!4b1!4m5!3m4!1s0x485edd2ced6b1cd3:0xa00c7a99731ac00!8m2!3d54.3047546!4d-8.5640206"
         },
     ];
-
-    for (location in locations) {
-
-    // Adds a marker  to the map.
-    addMarker(locations[i].coordinates);
-            
-   }
     
-    // Adds a marker to the map and push to the array and open info window when //the user clicks the marker, an info window opens.
-    function addMarker(location) {
-        
-        const infowindow = new google.maps.InfoWindow({
-            content : `<h4>${locations[i].placeName}</h4>
-            <p>${ locations[i].information} ${locations[i].link }"</p>"`
+    // Add some markers to the map.
+    const markers = locations.map((location, i) => {
+        return new google.maps.Marker({
+          position: location,
+          label: labels[i % labels.length],
         });
+      });
+      // Add a marker clusterer to manage the markers.
+      new MarkerClusterer(map, markers, {
+        imagePath:
+          "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+      });
 
-        const marker = new google.maps.Marker({
-            position: location,
-            animation: google.maps.Animation.DROP,
-            map: map,
-        });
-
-        marker.addListener("click", () => {
-           infowindow.open(map, marker);
-        });
-
-
-        //check for custom Icon
-
-       if (locations.type == iconArray.name) {
-            //set image icon
-            icon = iconArray.icon
-            
-            }
-            
-           marker.setIcon (icon)
-       }
-       
-        
-        markers.push(marker);
-    }
-
-    // Deletes all markers in the array by removing references to them.
-    function deleteMarkers() {
-        clearMarkers();
-        markers = [];
    }
 
 
