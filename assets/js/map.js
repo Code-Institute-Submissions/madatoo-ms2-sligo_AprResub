@@ -159,12 +159,71 @@ function initMap() {
           position: location,
           label: labels[i % labels.length],
         });
+
       });
       // Add a marker clusterer to manage the markers.
       new MarkerClusterer(map, markers, {
         imagePath:
-          "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+
       });
+      //When the user clicks the marker, an info window opens. 
+      
+      for (location in locations) {
+          
+        //adds marker to the map
+          
+          addMarker(locations[i].coordinates);
+
+        //ads a marker to the map and push to the array and open info window //when the user clicks the marker an info window opens.
+
+        function addMarker(location) {
+
+            const infowindow = new google.maps.InfoWindow({
+                content:`"<h4>"${locations[i].placeName}"</h4>"
+                "<p>"${locations[i].information} ${locations[i].link}"</p>"`
+            
+            });
+
+            const marker = new google.maps.Marker({
+                position: location,
+                animation:google.maps.Animation.DROP,
+                map:map,
+
+            })
+
+            marker.addListener("click",()=> {
+                infowindow.open(map.marker);
+
+            })
+
+            //check for custom Icon
+
+            if (locations.type == iconArray.name) {
+                //set image icon
+
+                icon = iconArray.icon
+
+            }
+
+            marker.setIcon(icon)
+        }
+
+        markers.push(marker);
+
+        }
+    //deletes all markers in the array by removing refferences to them.
+
+    function deleteMarkers() {
+        clearMarkers();
+        markers =[];
+    }
+
+
+      
+
+    
+      }
 
    }
 
