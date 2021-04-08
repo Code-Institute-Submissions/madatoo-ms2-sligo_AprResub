@@ -150,17 +150,15 @@ function initMap() {
             link: "https://www.google.com/maps/place/Rosses+Upper,+Rosses+Point,+Co.+Sligo/@54.3047663,-8.5727754,15z/data=!3m1!4b1!4m5!3m4!1s0x485edd2ced6b1cd3:0xa00c7a99731ac00!8m2!3d54.3047546!4d-8.5640206"
         },
     ];
-    
-    
-
       
-      // Add a marker clusterer to manage the markers.
-      new MarkerClusterer(map, markers, {
+        // Add a marker clusterer to manage the markers.
+        new MarkerClusterer(map, markers, {
         imagePath:
-        "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        "https://developers.google.com/maps/documentation/javascript/examples///markerclusterer/m",
 
       });
-      //When the user clicks the marker, an info window opens. 
+
+        //When the user clicks the marker, an info window opens. 
       
       for (location in locations) {
           
