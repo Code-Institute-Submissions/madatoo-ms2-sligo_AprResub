@@ -159,15 +159,29 @@ function initMap() {
         let marker = new google.maps.Marker({
             map: map,
             position: sligo,
-            icon: iconsArray[location.type].icon
+            //icon: iconsArray[location.type].icon
         });
 
-        
+        //check for custom icon
 
+        if (locations.type == iconsArray.name) {
+
+            //set image icon
+
+            icon = iconsArray.icon
+        }
+
+            marker.setIcon(icon)
+
+        }
+
+        marker.push (marker);
     }
 
+    //deletes all markers in the array by removing references to 
     
-    
+}
+  
     
 
   // Add a marker clusterer to manage the markers.
@@ -176,4 +190,3 @@ function initMap() {
   //    "https://developers.google.com/maps/documentation/javascript/examples/////markerclusterer/m",
   //});
 
-}}
