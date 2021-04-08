@@ -8,6 +8,7 @@ const sligo = {
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: sligo,
+        animation:google.maps.Animation.DROP,
         zoom: 11,
         mapTypeId: "satellite",
         //heading: 90,
@@ -150,38 +151,51 @@ function initMap() {
             link: "https://www.google.com/maps/place/Rosses+Upper,+Rosses+Point,+Co.+Sligo/@54.3047663,-8.5727754,15z/data=!3m1!4b1!4m5!3m4!1s0x485edd2ced6b1cd3:0xa00c7a99731ac00!8m2!3d54.3047546!4d-8.5640206"
         },
     ];
-      
-        // Add a marker clusterer to manage the markers.
-        new MarkerClusterer(map, markers, {
-        imagePath:
-        "https://developers.google.com/maps/documentation/javascript/examples///markerclusterer/m",
 
-      });
+        
+        function addMarker(loction){
 
-        //When the user clicks the marker, an info window opens. 
-      
-      for (location in locations) {
-          
-        //adds marker to the map
-          
-          addMarker(locations[i].coordinates);
-
-        //ads a marker to the map and push to the array and open info window //when the user clicks the marker an info window opens.
-
-        function addMarker(location) {
-
-            const infowindow = new google.maps.InfoWindow({
+            //define variable marker
+            var marker = new google.maps.Marker({
+                position: locations.coordinates,
+                icon:[location.type].icon,
+                map:map 
+            })
+            
+            //define the info window
+            marker.infowindow = new google.maps.InfoWindow({
                 content:`"<h4>"${locations[i].placeName}"</h4>"
                 "<p>"${locations[i].information} ${locations[i].link}"</p>"`
             
             });
 
-            const marker = new google.maps.Marker({
-                position: location,
-                animation:google.maps.Animation.DROP,
-                map:map,
+            // Add a marker clusterer to manage the markers.
+            //new MarkerClusterer(map, markers, {
+            //    imagePath:
+            //    "https://developers.google.com/maps/documentation/javascript////examples///markerclusterer/m",
 
-            })
+            //});
+
+            //When the user clicks the marker, an info window opens. 
+      
+            for (location in locations) {
+          
+            //adds marker to the map
+          
+            addMarker(locations[i].coordinates);
+
+            //ads a marker to the map and push to the array and open info window //when the user clicks the marker an info window opens.
+
+            //function addMarker(location) {
+
+            
+
+            //const marker = new google.maps.Marker({
+                //position: location,
+                //animation:google.maps.Animation.DROP,
+                //map:map,
+
+            //})
 
             marker.addListener("click",()=> {
                 infowindow.open(map.marker);
@@ -208,14 +222,7 @@ function initMap() {
     function deleteMarkers() {
         clearMarkers();
         markers =[];
+    
     }
 
-
-      
-
-    
-      }
-
-   
-
-
+}
