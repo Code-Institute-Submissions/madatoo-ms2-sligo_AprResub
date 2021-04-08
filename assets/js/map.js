@@ -154,43 +154,21 @@ function initMap() {
 
     //ads a marker to the map and push to the array and open info window //when the user clicks the marker an info window opens 
     
-    function addMarker(loction){
+     //When the user clicks the marker, an info window opens. 
+      
+     for (location in locations) {
+          
+        //adds marker to the map
+          
+        addMarker(locations);
+
+    function addMarker(locations){
 
     //define variable marker
         var marker = new google.maps.Marker({
             position: locations.coordinates,
             icon:[location.type].icon,
             map:map 
-        })
-  
-        // Add a marker clusterer to manage the markers.
-        
-        //new MarkerClusterer(map, markers, {
-            //imagePath:
-            //"https://developers.google.com/maps/documentation/javascript////examples///markerclusterer/m",
-
-        //});
-
-        //define the info window
-        
-        //marker.infowindow = new google.maps.InfoWindow({
-        //    content:`"<h4>"${locations[i].placeName}"</h4>"
-        //    "<p>"${locations[i].information} ${locations[i].link}"</p>"`
-         
-            //});
-
-        //When the user clicks the marker, an info window opens. 
-      
-        for (location in locations) {
-          
-        //adds marker to the map
-          
-        addMarker(locations);
-   
-
-        marker.addListener("click",()=> {
-            infowindow.open(map.marker);
-
         })
 
         //check for custom Icon
@@ -205,15 +183,54 @@ function initMap() {
             marker.setIcon(icon)
         }
 
+        //if infowindow
+
+        //define the info window
+        
+        //marker.infowindow = new google.maps.InfoWindow({
+        //    content:`"<h4>"${locations[i].placeName}"</h4>"
+        //    "<p>"${locations[i].information} ${locations[i].link}"</p>"`
+         
+            //});
+     
+        // Add a marker clusterer to manage the markers.
+        
+        //new MarkerClusterer(map, markers, {
+            //imagePath:
+            //"https://developers.google.com/maps/documentation/javascript////examples///markerclusterer/m",
+    
+        //});
+
         markers.push(marker);
 
         }
-    //deletes all markers in the array by removing refferences to them.
 
-    function deleteMarkers() {
-        clearMarkers();
-        markers =[];
+        marker.addListener("click",()=> {
+            infowindow.open(map.marker);
+
+        })
+
+        //deletes all markers in the array by removing refferences to them.
+        function deleteMarkers() {
+            clearMarkers();
+            markers =[];
+        
+        }
     
     }
+  
 
-}
+
+        
+
+        
+
+       
+   
+
+       
+
+        
+    
+
+   
