@@ -119,11 +119,16 @@ This is the most important page on this project. It will contain the map with re
     - 
 2. Browser Compatibility
     Google Chrome - working 
-    Firefox -
-    Edge - 
+    Firefox -working
+    Edge - working
+    Safari-working but small devices need to have media query with smaller heading.
+
     
 
 3. Responsiveness
+
+Yes there is.
+
 4. User Stories
 
     User Stories
@@ -137,6 +142,16 @@ I had trouble with the display map, because I restricted an API. Only when it wa
 I needed to replace old links from Bootstap - but even that did not solve all of my problems.
 
 In the future, I want to remove all of the errors and create a much more customised map, which I saw in Google Maps documentation.
+
+Lighthouse report:
+
+Performance 28 (because I have a lot unused JS script (arras),
+Accessibility 90
+Best Practices 80
+SEO 92
+
+file is available (here)[assets/jpg/jpg.Ligthouse.docx] 
+
 
 Knows Bugs:
 |
