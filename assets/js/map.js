@@ -1,24 +1,31 @@
 let map;
 
+//the location of Sligo
 const sligo = {
     lat: 54.2697,
     lng: -8.4694
 };
-
+//initialize and add add the map
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
+        //map centered at Sligo
         center: sligo,
-        animation:google.maps.Animation.DROP,
         zoom: 11,
         mapTypeId: "satellite",
-        //heading: 90,
-        //tilt: 45,
+        
+    });
+
+        // The marker, positioned at Sligo
+        const marker = new google.maps.Marker({
+        position: Sligo,
+        animation:google.maps.Animation.DROP,
+        map: map,
     });
 
 
     const iconBase = "assets/img/";
     // array with icons   
-    const iconArray = [
+    const iconsArray = [
 
         {
             name: "surfing",
@@ -56,7 +63,7 @@ function initMap() {
         }
     ];
 
-    // create an array with places in and nearby Sligo
+    // created an array with places in and nearby Sligo
     const locations = [
 
         // Beaches
@@ -100,8 +107,7 @@ function initMap() {
 
         },
 
-
-        //Sligo Abbey
+         //Sligo Abbey
         {
             coordinates: {
                 lat: 54.27087,
@@ -152,74 +158,15 @@ function initMap() {
         },
     ];
 
-    //ads a marker to the map and push to the array and open info window //when the user clicks the marker an info window opens 
     
-     //When the user clicks the marker, an info window opens. 
-      
-     for (location in locations) {
-          
-        //adds marker to the map
-          
-        addMarker(locations);
 
-    function addMarker(locations){
 
-    //define variable marker
-        var marker = new google.maps.Marker({
-            position: locations.coordinates,
-            icon:[location.type].icon,
-            map:map 
-        })
 
-        //check for custom Icon
+}
 
-        if (locations.type == iconArray.name) {
-            //set image icon
-
-            icon = iconArray.icon
-
-        }
-
-            marker.setIcon(icon)
-        }
-
-        //if infowindow
-
-        //define the info window
         
-        //marker.infowindow = new google.maps.InfoWindow({
-        //    content:`"<h4>"${locations[i].placeName}"</h4>"
-        //    "<p>"${locations[i].information} ${locations[i].link}"</p>"`
-         
-            //});
-     
-        // Add a marker clusterer to manage the markers.
         
-        //new MarkerClusterer(map, markers, {
-            //imagePath:
-            //"https://developers.google.com/maps/documentation/javascript////examples///markerclusterer/m",
-    
-        //});
-
-        markers.push(marker);
-
-        }
-
-        marker.addListener("click",()=> {
-            infowindow.open(map.marker);
-
-        })
-
-        //deletes all markers in the array by removing refferences to them.
-        function deleteMarkers() {
-            clearMarkers();
-            markers =[];
-        
-        }
-    
-    }
-  
-
+       
 
         
 
@@ -232,5 +179,4 @@ function initMap() {
 
         
     
-
    

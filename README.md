@@ -125,6 +125,18 @@ This is the most important page on this project. It will contain the map with re
 
 3. Responsiveness
 4. User Stories
+
+    User Stories
+
+As a user I am dissapointed, that I can't watch the videos directly on the page.
+
+To solve all of these issues I was looking for some solutions online - on Stack Overflow, Slack and Student Support. Due to limited time for this project, I am glad that i at least made what I have now. For my circumstances, I think I've done a good job. I had to share a laptop with my daughter, who is a university student, because the motherboard in mine was broken. I have a personal laptop only since Friday afternoon.
+
+I had trouble with the display map, because I restricted an API. Only when it wasn't done - the map appered on the screen. I also had trouble to see how my work looks like during the weekend (it was visible for Student Support but not on my laptop) - on both browsers (Chrome, Firefox), as I could not see anything.
+
+I needed to replace old links from Bootstap - but even that did not solve all of my problems.
+
+In the future, I want to remove all of the errors and create a much more customised map, which I saw in Google Maps documentation.
 |
 ## Deployment
 
