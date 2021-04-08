@@ -137,6 +137,8 @@ I had trouble with the display map, because I restricted an API. Only when it wa
 I needed to replace old links from Bootstap - but even that did not solve all of my problems.
 
 In the future, I want to remove all of the errors and create a much more customised map, which I saw in Google Maps documentation.
+
+Knows Bugs:
 |
 ## Deployment
 
@@ -164,3 +166,24 @@ Run this project locally (clone this project into Gitpod) you will need:
 
 ## Credits
 
+To create this project I used Google Maps Platform, Bootstap and w3schools, Kevin Powell, Traversy Media If a source is not mentioned above, then additional information about an original code, which was changed according to my website's needs, is mentioned in other files.
+
+### Code
+Bryce St. Pierrewebsites, medium.com, Traversy Media, Florin Pop, Sam Codes and their tutorials. I also used Slack, Stack Overflow, Tutors CI.
+
+### Content
+This was written by me after researching information about the places mentioned on the website.
+
+### Media
+Photos are from my own stock, except for the photos of the Yeats Building and the Lissadell House and Gardens which are from Google Images.
+##### Youtube films:
+
+Jonathan Graham
+Go Strandhill 
+Lissadell House
+Frank Adam 
+Gerard Beirne 
+Outside Magazine Media
+
+### Acknowledgements
+I want to thank my Mentor, who has helped me with this project, the Tutors Team,who have helped me with the technical issues and my family who have supported me throughout the course of this project :) And my family and friends

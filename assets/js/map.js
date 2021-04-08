@@ -1,5 +1,7 @@
 let map;
 
+let markerArray =[];
+
 //initialize and add the map
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
@@ -149,13 +151,45 @@ function initMap() {
             link: "https://www.google.com/maps/place/Rosses+Upper,+Rosses+Point,+Co.+Sligo/@54.3047663,-8.5727754,15z/data=!3m1!4b1!4m5!3m4!1s0x485edd2ced6b1cd3:0xa00c7a99731ac00!8m2!3d54.3047546!4d-8.5640206"
         },
     ];
+//https://medium.com/free-code-camp/how-to-change-javascript-google-map-marker-color-8a72131d1207
+
+    addMarker({lat: 54.306250, lng: -8.567500}, "yellow");//Rosess Point
+    addMarker({lat: 54.306250,  lng: -8.567500}, "green");//Strandhill
+    addMarker({lat: 54.2697, lng: -8.4694,}, "blue");//Sligo
+    addMarker({lat: 54.27087, lng: -8.47002,}, "red");//Sligo Abbey
+    addMarker({lat: 54.27376, lng: -8.47213,}, "pink");//Yeats Building
+    addMarker({lat:54.27376, lng: -8.47213}, "purple");//Lisadell House and Gardens 
+    addMarker({lat: 54.46555, lng: -8.45219,}, "white");//Mullaghamore
+   
+  }
+  
+
+  function addMarker(latLng, color) {
+    let url = "http://maps.google.com/mapfiles/ms/icons/";
+    url += color + "-dot.png";
+  
+    let marker = new google.maps.Marker({
+      map: map,
+      position: latLng,
+      icon: {
+        url: url
+      }
+    });
+  
+    //store the marker object drawn in global array
+    markersArray.push(marker);
+    }
+  
+}
 
 
-    for (location in locations){
+
+
+   // for (location in locations){
 
     //add marker  
 
-    function addMarker(location) {
+   /* function addMarker(location) {
         let marker = new google.maps.Marker({
             map: map,
             position: sligo,
@@ -176,11 +210,11 @@ function initMap() {
         }
 
         marker.push (marker);
-    }
+    }*/
 
     //deletes all markers in the array by removing references to 
     
-}
+
   
     
 
