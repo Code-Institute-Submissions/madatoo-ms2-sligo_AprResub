@@ -14,8 +14,6 @@ function initMap() {
         //tilt: 45,
     });
 
-    // Create an array of alphabetical characters used to label the markers.
-    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     const iconBase = "assets/img/";
     // array with icons   
@@ -153,14 +151,9 @@ function initMap() {
         },
     ];
     
-    // Add some markers to the map.
-    const markers = locations.map((location, i) => {
-        return new google.maps.Marker({
-          position: location,
-          label: labels[i % labels.length],
-        });
+    
 
-      });
+      
       // Add a marker clusterer to manage the markers.
       new MarkerClusterer(map, markers, {
         imagePath:
@@ -225,6 +218,6 @@ function initMap() {
     
       }
 
-   }
+   
 
 
