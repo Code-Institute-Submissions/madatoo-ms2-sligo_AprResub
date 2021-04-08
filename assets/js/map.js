@@ -16,13 +16,6 @@ function initMap() {
         
     });
 
-    // The marker, positioned at Sligo
-    const marker = new google.maps.Marker({
-        position: sligo,
-        animation:google.maps.Animation.DROP,
-        map: map,
-    });
-
     const iconBase = "assets/img/";
     // array with icons   
     const iconsArray = [
@@ -157,34 +150,30 @@ function initMap() {
         },
     ];
 
-    //name in iconsArray = label in google maps sample
-    //coordinates in locations array = locations in google maps sample
 
     for (location in locations){
 
-        addMarker(locations[i].coordinates);
-    }
-    function addMarker(locations)  {
+    //add marker  
+
+    function addMarker(location) {
+        let marker = new google.maps.Marker({
+            map: map,
+            position: sligo,
+            icon: iconsArray[location.type].icon
+        });
+
         
-        // Add some markers to the map.
 
-        const markers = locations.map((location, i) => {
-
-            return new google.maps.Marker({
-      position: location,
-      label: iconsArray[i % iconsArray.length],
-    });
-  });
-
-  // Add a marker clusterer to manage the markers.
-  new MarkerClusterer(map, markers, {
-    imagePath:
-      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  });
+    }
 
     
+    
+    
 
-}
+  // Add a marker clusterer to manage the markers.
+  //new MarkerClusterer(map, markers, {
+  //  imagePath:
+  //    "https://developers.google.com/maps/documentation/javascript/examples/////markerclusterer/m",
+  //});
 
-
-}
+}}
