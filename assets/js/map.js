@@ -1,13 +1,14 @@
 let map;
 
-//the location of Sligo
-const sligo = {
-    lat: 54.2697,
-    lng: -8.4694
-};
-//initialize and add add the map
+//initialize and add the map
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
+        //the location of Sligo
+        const :sligo = {
+            lat: 54.2697,
+            lng: -8.4694
+        },
+        
         //map centered at Sligo
         center: sligo,
         zoom: 11,
@@ -15,13 +16,12 @@ function initMap() {
         
     });
 
-        // The marker, positioned at Sligo
-        const marker = new google.maps.Marker({
-        position: Sligo,
+    // The marker, positioned at Sligo
+    const marker = new google.maps.Marker({
+        position: sligo,
         animation:google.maps.Animation.DROP,
         map: map,
     });
-
 
     const iconBase = "assets/img/";
     // array with icons   
@@ -104,7 +104,6 @@ function initMap() {
             information:"Sligo is also a tourist destination, being situated on the Wild Atlantic Way",
             link:"https://www.google.com/maps/place/Sligo/@54.26842,-8.5157496,13z/data=!3m1!4b1!4m5!3m4!1s0x485ee9b5677caee9:0xa00c7a997317380!8m2!3d54.2766103!4d-8.4760888"
 
-
         },
 
          //Sligo Abbey
@@ -158,25 +157,34 @@ function initMap() {
         },
     ];
 
+    //name in iconsArray = label in google maps sample
+    //coordinates in locations array = locations in google maps sample
+
+    for (location in locations){
+
+        addMarker(locations[i].coordinates);
+    }
+    function addMarker(locations)  {
+        
+        // Add some markers to the map.
+
+        const markers = locations.map((location, i) => {
+
+            return new google.maps.Marker({
+      position: location,
+      label: iconsArray[i % iconsArray.length],
+    });
+  });
+
+  // Add a marker clusterer to manage the markers.
+  new MarkerClusterer(map, markers, {
+    imagePath:
+      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+  });
+
     
-
-
 
 }
 
-        
-        
-       
 
-        
-
-        
-
-       
-   
-
-       
-
-        
-    
-   
+}

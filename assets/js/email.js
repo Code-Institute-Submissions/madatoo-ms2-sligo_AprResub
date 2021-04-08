@@ -1,4 +1,8 @@
 //this code is from https://www.emailjs.com/docs/tutorial/creating-contact-form/
+
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
                
         function sendMail(send_message){
 
@@ -23,5 +27,4 @@
 
             return false;
         }
-     
-    
+    })}
